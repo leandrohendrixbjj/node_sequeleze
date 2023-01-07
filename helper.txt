@@ -1,0 +1,24 @@
+***********************************************************************************************
+                                            NPM
+npm init -y -> create the file packege.json
+
+npm install --save-dev nodemon
+
+npm install mysql2
+
+npm install sequelize sequelize-cli path
+
+npx sequelize-cli init
+
+**********************************************************************************************
+DATABASE -> english_school
+**********************************************************************************************
+                                   sequelize's COMMANDS
+
+npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
+
+npx sequelize-cli db:migrate -> Roda migration->executar dentro da pasta api.
+
+npx sequelize-cli seed:generate --name demo-pessoa -> Create a seed
+
+npx sequelize-cli db:seed:all -> executa o seed
